@@ -1,10 +1,7 @@
 import sys
 import os
-import ctypes
+from messagebox import mbox
 from pypdf import PdfReader, PdfWriter
-
-def mbox(titulo, texto, estilo):
-    return ctypes.windll.user32.MessageBoxW(0, texto, titulo, estilo)
 
 def split_pdf(caminho_arquivo):
     try:
